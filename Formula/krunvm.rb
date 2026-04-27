@@ -7,7 +7,7 @@ class Krunvm < Formula
 
   bottle do
     root_url "https://raw.githubusercontent.com/slp/homebrew-krun/master/bottles"
-    sha256 cellar: :any, arm64_tahoe: "ebb4d07cc32b2f7b0c17dde0db67ae315831877f0a472149ecf058fc536d4195"
+    sha256 cellar: :any, arm64_tahoe:   "ebb4d07cc32b2f7b0c17dde0db67ae315831877f0a472149ecf058fc536d4195"
     sha256 cellar: :any, arm64_sequoia: "0bb8acfda1dcba4bc8e0fe893b677fd896e223c71f9f366a02f79939962d6700"
   end
 
@@ -25,6 +25,6 @@ class Krunvm < Formula
   end
 
   test do
-    system "krunvm", "--version"
+    system "#{bin}/krunvm", "--version"
   end
 end
