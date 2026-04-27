@@ -16,6 +16,7 @@ class Libkrun < Formula
   # Upstream only supports Hypervisor.framework on arm64
   depends_on arch: :arm64
   depends_on "dtc"
+  depends_on "libepoxy"
   depends_on "libkrunfw"
   depends_on "virglrenderer"
   depends_on "xz"
