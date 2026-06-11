@@ -14,7 +14,8 @@ The formulae and bottles on this repository only support macOS on Apple Silicon-
 ## How do I install these formulae?
 
 ```
-brew tap slp/krun
+brew tap libkrun/krun
+brew trust libkrun/krun
 brew install krunvm
 brew install krunkit
 brew install krunai
