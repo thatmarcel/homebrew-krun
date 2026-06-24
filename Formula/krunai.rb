@@ -6,9 +6,10 @@ class Krunai < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/slp/homebrew-krun/releases/download/krunai-0.2.5"
-    sha256 cellar: :any, arm64_tahoe:   "53b54c58fd1fbbbd4a02c61f64c3ed792cd76cce89e38dda37c5814d021b6c5b"
-    sha256 cellar: :any, arm64_sequoia: "ee8dc37ee9771894b09c7773f258fa6df5ecfb76616c23c1f13728159ce65520"
+    root_url "https://github.com/libkrun/homebrew-krun/releases/download/krunai-0.2.5"
+    rebuild 1
+    sha256 cellar: :any, arm64_tahoe:   "b31e0848c5667207955a3e13f6ce4829add8bc5134b3c1cbb9bb6eedca3c7ae9"
+    sha256 cellar: :any, arm64_sequoia: "9de59b46beea120b72f6357c01beb244773e6fdf7a546324b04ee3b05f35f6fb"
   end
 
   depends_on "llvm" => :build
