@@ -6,7 +6,7 @@ class Krunai < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/libkrun/homebrew-krun/releases/download/krunai-0.2.5"
+    root_url "https://github.com/thatmarcel/homebrew-krun/releases/download/krunai-0.2.5"
     rebuild 1
     sha256 cellar: :any, arm64_tahoe:   "b31e0848c5667207955a3e13f6ce4829add8bc5134b3c1cbb9bb6eedca3c7ae9"
     sha256 cellar: :any, arm64_sequoia: "9de59b46beea120b72f6357c01beb244773e6fdf7a546324b04ee3b05f35f6fb"
@@ -16,10 +16,10 @@ class Krunai < Formula
   depends_on "rust" => :build
   # We depend on libkrun, which only supports Hypervisor.framework on arm64
   depends_on arch: :arm64
-  depends_on "gvproxy"
-  depends_on "libkrun"
   # We just need qemu-img, but it's not packaged independently
   depends_on "qemu"
+  depends_on "thatmarcel/krun/gvproxy"
+  depends_on "thatmarcel/krun/libkrun"
 
   def install
     ENV["LIBCLANG_PATH"] = formula_opt_lib("llvm")

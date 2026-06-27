@@ -6,7 +6,7 @@ class Buildah < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://raw.githubusercontent.com/slp/homebrew-krun/master/bottles"
+    root_url "https://raw.githubusercontent.com/thatmarcel/homebrew-krun/main/bottles"
     sha256 cellar: :any, arm64_tahoe:   "a84255765dabd14a9d6e4198f8e0853772e842602162c2e20c392d21292bac88"
     sha256 cellar: :any, arm64_sequoia: "feaea5a655e258f6ac352a6d21d61d6a60192898b1fa43de767b69f540539011"
   end

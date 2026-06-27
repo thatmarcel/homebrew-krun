@@ -6,7 +6,7 @@ class Krunvm < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://raw.githubusercontent.com/slp/homebrew-krun/master/bottles"
+    root_url "https://raw.githubusercontent.com/thatmarcel/homebrew-krun/main/bottles"
     sha256 cellar: :any, arm64_tahoe:   "ebb4d07cc32b2f7b0c17dde0db67ae315831877f0a472149ecf058fc536d4195"
     sha256 cellar: :any, arm64_sequoia: "0bb8acfda1dcba4bc8e0fe893b677fd896e223c71f9f366a02f79939962d6700"
   end
@@ -15,8 +15,8 @@ class Krunvm < Formula
   depends_on "rust" => :build
   # We depend on libkrun, which only supports Hypervisor.framework on arm64
   depends_on arch: :arm64
-  depends_on "buildah"
-  depends_on "libkrun"
+  depends_on "thatmarcel/krun/buildah"
+  depends_on "thatmarcel/krun/libkrun"
 
   def install
     system "make"

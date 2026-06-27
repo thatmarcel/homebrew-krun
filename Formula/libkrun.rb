@@ -6,7 +6,7 @@ class Libkrun < Formula
   license "Apache-2.0"
 
   bottle do
-    root_url "https://github.com/libkrun/homebrew-krun/releases/download/libkrun-1.19.3"
+    root_url "https://github.com/thatmarcel/homebrew-krun/releases/download/libkrun-1.19.3"
     sha256 cellar: :any, arm64_tahoe:   "1407b421ed98747334285a135f6bdb8e42daf6beac7076b2cfce1fb017e8179a"
     sha256 cellar: :any, arm64_sequoia: "9bc73f8793f38fe2cc68c161dbf93f7abc5a5f9cc87da926d2cd8c2427de5f3a"
   end
@@ -17,8 +17,8 @@ class Libkrun < Formula
   depends_on arch: :arm64
   depends_on "dtc"
   depends_on "libepoxy"
-  depends_on "libkrunfw"
-  depends_on "virglrenderer"
+  depends_on "thatmarcel/krun/libkrunfw"
+  depends_on "thatmarcel/krun/virglrenderer"
   depends_on "xz"
 
   def install
