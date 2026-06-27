@@ -5,13 +5,6 @@ class Krunai < Formula
   sha256 "d19457adcb024beff9a5d103cc8aac59b1ccae397fef46e9c2eb93f2f330922c"
   license "Apache-2.0"
 
-  bottle do
-    root_url "https://github.com/thatmarcel/homebrew-krun/releases/download/krunai-0.2.5"
-    rebuild 1
-    sha256 cellar: :any, arm64_tahoe:   "b31e0848c5667207955a3e13f6ce4829add8bc5134b3c1cbb9bb6eedca3c7ae9"
-    sha256 cellar: :any, arm64_sequoia: "9de59b46beea120b72f6357c01beb244773e6fdf7a546324b04ee3b05f35f6fb"
-  end
-
   depends_on "llvm" => :build
   depends_on "rust" => :build
   # We depend on libkrun, which only supports Hypervisor.framework on arm64
